@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>WIRL @ Taipei Tech</title>
+    <style>
+        #map {
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="height:70px; background-color: #97cbff; padding-left: 50px; padding-right: 50px">
+        <a class="navbar-brand" href="#">WIRL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-tabs">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#top">首頁<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#introduction">實驗室簡介</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">最新消息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#research">研究方向與成果</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">研究計畫</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resource">實驗室資源</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resource">網路資源</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#technology" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        技術 Demo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#6_1">Word2Vec</a>
+                        <a class="dropdown-item" href="#6_2">CNN</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#6_3">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="top" class="jumbotron" style="height: -webkit-fill-available;background-color: #ffffff;">
+        <div class="container" style="padding-top: 40px">
+            <h3 style="text-align: -webkit-center;"><B>網路資訊檢索實驗室 WIRL</B></h3>
+            <hr>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox" style=" width:100%; height: 400px !important;">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./photo/IMG_3587.JPG" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./photo/IMG_0228.JPG" alt="Second slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--<div class="col"></div>-->
+            <!--<div class="col-md-auto">-->
+                <!--<p class="lead" style="text-align: -webkit-center;">-->
+                    <!--感謝您拜訪我們WIRL實驗室的主頁，此頁面由實驗室成員所維護，<br>-->
+                    <!--如果您對我們的實驗室感興趣，您可以依據下列幾點開始：<br>-->
+                    <!--<ul class="list-group list-group-flush" style="text-align: center;">-->
+                        <!--<a href="#introduction" class="list-group-item list-group-item-action">實驗室簡介</a>-->
+                        <!--<a href="#2" class="list-group-item list-group-item-action">實驗室成員</a>-->
+                        <!--<a href="#3" class="list-group-item list-group-item-action">研究方向與成果</a>-->
+                        <!--<a href="#4" class="list-group-item list-group-item-action">實驗室資源</a>-->
+                    <!--</ul>-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="col"></div>-->
+        </div>
+    </div>
+    <div id="introduction" style="height: -webkit-fill-available;background-color: #ffaf60; padding: 80px 30px 0px 30px;" class="row" >
+        <div style="text-align: -webkit-center; width:100%; margin-top: 10px;"><h3>實驗室簡介</h3></div>
+        <div class="col card" style="padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
+            <h5 class="card-title" style="text-align: -webkit-center;">實驗室位置</h5>
+            <p>Located at R1424, Technology Building, Web Information Retrieval Lab (WIRL), was founded by Dr. Jenq-Haur Wang in September 2007.</p>
+            <div id="map"></div>
+        </div>
+        <div class="col card" style="padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
+            <h5 class="card-title" style="text-align: -webkit-center;">實驗室成員</h5>
+            <p>Currently there're 10 graduates and 7 undergraduate students in the lab.</p>
+        </div>
+        <div class="col card" style="padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
+            <h5 class="card-title" style="text-align: -webkit-center;">近期研究方向</h5>
+            <p>
+                Recent research direction focuses on topics including
+                <li>Web information retrieval</li>
+                <li>Social Web mining</li>
+                <li>Big data analytics</li>
+                <li>Information security.</li>
+            </p>
+        </div>
+        <div class="col card" style="padding:20px;width: 18rem;">
+            <h5 class="card-title" style="text-align: -webkit-center;">更多關於我們</h5>
+            <p>More details can be found in the Research Directions part. You can also check the WIRL Research Results.</p>
+            <a href="#research" class="card-link"><button type="button" class="btn btn-secondary">Research</button></a><br>
+            <a href="#technology" class="card-link"><button type="button" class="btn btn-secondary">Technology demo</button></a>
+        </div>
+    </div>
+    <div id="news" style="height: -webkit-fill-available;background-color: #ffed97; padding: 80px 30px 0px 30px;">
+        <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>最新消息</h3></div>
+        <div class="bg-white rounded box-shadow" style="padding: 16px;">
+            <p class="lead" style="text-align: -webkit-center;">
+                <b>Awards & Papers</b>
+                <li>2013/09/02: Congratulations! Our paper has been accepted by SocInfo 2013 as Full Paper.
+                    <ul><li>Jenq-Haur Wang and Ting-Wei Yeh, "Unsupervised Opinion Targets Expansion and Modification Relation Identification for Microblog Sentiment Analysis," Accepted and to appear in Proceedings of the 5th International Conference on Social Informatics (SocInfo 2013), Kyoto, Japan, Nov. 25-27, 2013.</li></ul>
+                </li>
+                <li>2013/08/26: Congratulations! Ting-Wei and Yu-Hsin won Honorable Mention in IPPR 2013 competition with our Smart TV team!</li>
+                <li>2012/09/02: Congratulations! Our paper has been accepted by AIRS 2012.
+                    <ul><li>Han-Chih Liu and Jenq-Haur Wang, "Aggregating Opinions on Hot Topics from Microblog Responses," Accepted and to appear in Proceedings of the Eighth Asia Information Retrieval Societies Conference (AIRS 2012), Tianjin, China, Dec. 17-19, 2012.</li></ul>
+                </li>
+                <li>2012/04/27: Congratulations to our team members: Shiang Huang (黃驤) and Jia-Zhi Lin (林佳志)! They won the first runner-up in the Web Applications and Services Track, 2011 Network Communication Software and Creative Applications Contest.</li>
+            </p>
+
+        </div>
+    </div>
+    <div id="research" style="height: -webkit-fill-available;background-color: #a6ffa6; padding: 80px 30px 0px 30px;">
+        <div class="container">
+            <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>研究方向與成果</h3></div>
+            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+                <p class="lead" style="text-align: -webkit-left;">
+                    <h5 class="border-bottom border-gray pb-2 mb-0">Research Topic</h5>
+                    <li>Information Retrieval: Web search, social media mining, information extraction, and text mining</li>
+                    <li>Digital Libraries: digital content management, multimedia content retrieval</li>
+                    <li>Information Security: system and network security, content protection: digital rights management</li>
+                    <li>Distributed Computing: peer-to-peer computing, distributed information retrieval</li>
+
+                </p>
+            </div>
+            <br>
+            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+                <p class="lead" style="text-align: -webkit-left;">
+
+                    <h5 class="border-bottom border-gray pb-2 mb-0">Research Results</h5>
+                    <br>
+                    <h6 class="border-bottom border-gray pb-2 mb-0">Papers</h6>
+                    For more information about paper publication, please check the page of Dr. Jenq-Haur Wang.
+
+                    <h6 class="border-bottom border-gray pb-2 mb-0" style="padding-top: 20px; ">Theses and Technical Reports</h6>
+                    Up to now, there are 16 master theses and 13 technical reports written in this lab.<br>
+                    Please check the details about Theses and Technical Reports.
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div id="project" style="height: -webkit-fill-available;background-color: #81c0c0; padding: 80px 30px 0px 30px;">
+        <div class="container">
+            <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>研究計畫</h3></div>
+            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+                <p class="lead" style="text-align: -webkit-left;">
+                    <h5 class="border-bottom border-gray pb-2 mb-0">NSC (MOST) Projects</h5>
+                    <li>Human-Centered Interactive Interface of Smart TV That Incorporates Audio-Visual Technology</li>
+                    into Multi-Modal Smart Devices (MOST 103), 2014/09 - 2017/08
+                    <li>Realtime Hot Topics Detection, Trend Tracking, and Cross-Lingual Opinion Analysis using Social Web Mining (I) (NSC 103), 2014/08 - 2015/07</li>
+                    <li>Key Technologies of HIBTV Information Integration and Analysis (III) (NSC 102), 2013/05 - 2014/07</li>
+                    <li>Key Technologies of HIBTV Information Integration and Analysis (II) (NSC 101), 2012/05 - 2013/07</li>
+                    <li>Key Technologies of HIBTV Information Integration and Analysis (I) (NSC 100), 2011/05 - 2012/04</li>
+                    <li>Opinion Quality Evaluation Technology based on Social Web Mining (NSC 99), 2010/08 - 2011/10</li>
+                    <li>Content-based Web 2.0 document copy detection and tracking (II) (NSC 98), 2009/08 - 2010/07</li>
+                    <li>Content-based Web 2.0 document copy detection and tracking (II) (NSC 98), 2009/08 - 2010/07</li>
+                    <li>Large-scale distributed copy detection for digital content protection (NSC 96), 2007/08 - 2008/07</li>
+                </p>
+            </div>
+            <br>
+            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+                <p class="lead" style="text-align: -webkit-left;">
+                    <h5 class="border-bottom border-gray pb-2 mb-0">Internal Projects</h5>
+                    <br>
+                    More details can be found in the Internal Projects section.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="resource" style="height: -webkit-fill-available;background-color: #a6a6d2; padding: 80px 30px 0px 30px;">
+        <div class="row">
+            <div class="col" style="border-right-style:dotted; border-color: #4f4f4f;">
+                <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>實驗室資源</h3></div>
+                <div class="container bg-white rounded box-shadow" style="padding: 16px;">
+                    <li>Lab Homepage (temporarily accessible via IP only)</li>
+                    <li>WIRL @ Google Groups</li>
+                    <li>WIRL Progress Reporting System (new URL)</li>
+                    <li>Mailing list: w-i-r-l@googlegroups.com</li>
+                    <li>WIRL @ iGoogle : Google Apps (temporarily unavailable)</li>
+                    <li>Address Book</li>
+                </div>
+            </div>
+            <div class="col">
+                <div id="webresource" style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>網路資源</h3></div>
+                <div class="container bg-white rounded box-shadow" style="padding: 16px;">
+                    <p style="text-align: -webkit-center;">
+                        Here are some general Web resources and tools that might be useful.<br>
+                        For resources specific to particular domains, please refer to related research topics or internal projects.
+                    </p>
+                    <div class="row">
+                        <div class="col" style="border-right-style:dotted; border-color: #aab2aa;">
+                            <p style="text-align: -webkit-center;">
+                                <b>Academic Search</b><br>
+                                For graduate students, please utilize these tools to do paper survey.
+                            <li>Google Scholar</li>
+                            <li>DBLP: Computer Science Bibliography</li>
+                            <li>ACM portal</li>
+                            <li>IEEE Xplore</li>
+                            <li>Microsoft Libra</li>
+                            <li>CiteSeer</li>
+                            <li>EventSeer</li>
+                            </p>            </div>
+                        <div class="col" style="border-right-style:dotted; border-color: #aab2aa;">
+                            <p style="text-align: -webkit-center;">
+                                <b>Software Tools</b>
+                            <li>Google Code: APIs and development toolkits by Google</li>
+                            <li>SourceForge: open source projects</li>
+                            <li>OpenFoundry: open source projects (in Taiwan)</li>
+                            <li>Open source code search engine</li>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" style="background-color: #aab2aa; text-align: -webkit-center;">
+        <span class="text-muted" ><p style="color: white;">Copyright &copy; TAIPEI TECH WIRL 2018, Designed by Jessie Lu</p></span>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    function initMap() {
+        var uluru = {lat: 25.0440968, lng: 121.5336628};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5p5KeTnufoqcQOshsrO_ZegY2z5zxTtU&callback=initMap">
+</script>
+</body>
+</html>
