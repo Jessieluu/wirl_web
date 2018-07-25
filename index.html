@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
     <title>WIRL @ Taipei Tech</title>
     <style>
         #map {
             height: 300px;
-            width: 400px;
         }
     </style>
 </head>
@@ -25,10 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto nav-tabs">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#top">首頁<span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#top">首頁<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#introduction">實驗室簡介</a>
+                    <a class="nav-link page-scroll" href="#introduction">實驗室簡介</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#news">最新消息</a>
@@ -104,18 +106,46 @@
         </div>
     </div>
     <div id="introduction" style="height: -webkit-fill-available;background-color: #ffaf60; padding: 80px 30px 0px 30px;" class="row" >
-        <div style="text-align: -webkit-center; width:100%; margin-top: 10px;"><h3>實驗室簡介</h3></div>
-        <div class="col card" style="padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
-            <h5 class="card-title" style="text-align: -webkit-center;">實驗室位置</h5>
+        <div class="col card" style="background: rgba(100%,100%,100%,0.5);padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
+            <div class="section-title">
+                <h3>實驗室位置  <i class="fas fa-location-arrow"></i></h3>
+                <hr>
+            </div>
             <p>Located at R1424, Technology Building, Web Information Retrieval Lab (WIRL), was founded by Dr. Jenq-Haur Wang in September 2007.</p>
             <div id="map"></div>
         </div>
-        <div class="col card" style="padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
-            <h5 class="card-title" style="text-align: -webkit-center;">實驗室成員</h5>
-            <p>Currently there're 10 graduates and 7 undergraduate students in the lab.</p>
+        <div class="col card" style="background: rgba(100%,100%,100%,0.6);padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
+            <div class="section-title">
+                <h3>指導教授  <i class="fas fa-user"></i></h3>
+                <hr>
+            </div>
+            <div>
+                王正豪(Jenq-Haur Wang)  <a href="https://myweb.ntut.edu.tw/~jhwang/"><i class="fas fa-home"></i></a><br>
+                Ph.D, National Taiwan University, 2002<br>
+                <br>
+                國立台北科技大學<br>
+                資訊工程系副教授<br>
+                圖書資訊處資訊組組長<br>
+                <br>
+                台北市忠孝東路三段1號<br>
+                Office: 科研大樓 1534室<br>
+                Tel: (02) 27712171 ext. 4238<br>
+                E-mail: jhwang @ ntut.edu.tw<br>
+            </div>
+            <br>
+            <div class="section-title">
+                <h3>實驗室成員 <i class="fas fa-users"></i></h3>
+                <hr>
+            </div>
+            <div>
+                Currently there're 10 graduates and 7 undergraduate students in the lab.
+            </div>
         </div>
-        <div class="col card" style="padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
-            <h5 class="card-title" style="text-align: -webkit-center;">近期研究方向</h5>
+        <div class="col card" style="background: rgba(100%,100%,100%,0.5);padding:20px;border-right-style:dotted; border-color: #aab2aa; width: 18rem;">
+            <div class="section-title">
+                <h3>近期研究方向  <i class="fas fa-search"></i></h3>
+                <hr>
+            </div>
             <p>
                 Recent research direction focuses on topics including
                 <li>Web information retrieval</li>
@@ -124,8 +154,11 @@
                 <li>Information security.</li>
             </p>
         </div>
-        <div class="col card" style="padding:20px;width: 18rem;">
-            <h5 class="card-title" style="text-align: -webkit-center;">更多關於我們</h5>
+        <div class="col card" style="background: rgba(100%,100%,100%,0.6);padding:20px;width: 18rem;">
+            <div class="section-title">
+                <h3>更多關於我們  <i class="fas fa-caret-down"></i></h3>
+                <hr>
+            </div>
             <p>More details can be found in the Research Directions part. You can also check the WIRL Research Results.</p>
             <a href="#research" class="card-link"><button type="button" class="btn btn-secondary">Research</button></a><br>
             <a href="#technology" class="card-link"><button type="button" class="btn btn-secondary">Technology demo</button></a>
@@ -133,7 +166,7 @@
     </div>
     <div id="news" style="height: -webkit-fill-available;background-color: #ffed97; padding: 80px 30px 0px 30px;">
         <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>最新消息</h3></div>
-        <div class="bg-white rounded box-shadow" style="padding: 16px;">
+        <div class="rounded box-shadow" style="padding: 16px; background: rgba(100%,100%,100%,0.5);">
             <p class="lead" style="text-align: -webkit-center;">
                 <b>Awards & Papers</b>
                 <li>2013/09/02: Congratulations! Our paper has been accepted by SocInfo 2013 as Full Paper.
@@ -151,7 +184,7 @@
     <div id="research" style="height: -webkit-fill-available;background-color: #a6ffa6; padding: 80px 30px 0px 30px;">
         <div class="container">
             <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>研究方向與成果</h3></div>
-            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+            <div class="rounded box-shadow" style="padding: 16px; background: rgba(100%,100%,100%,0.5);">
                 <p class="lead" style="text-align: -webkit-left;">
                     <h5 class="border-bottom border-gray pb-2 mb-0">Research Topic</h5>
                     <li>Information Retrieval: Web search, social media mining, information extraction, and text mining</li>
@@ -162,7 +195,7 @@
                 </p>
             </div>
             <br>
-            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+            <div class="rounded box-shadow" style="padding: 16px; background: rgba(100%,100%,100%,0.5);">
                 <p class="lead" style="text-align: -webkit-left;">
 
                     <h5 class="border-bottom border-gray pb-2 mb-0">Research Results</h5>
@@ -182,7 +215,7 @@
     <div id="project" style="height: -webkit-fill-available;background-color: #81c0c0; padding: 80px 30px 0px 30px;">
         <div class="container">
             <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>研究計畫</h3></div>
-            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+            <div class="rounded box-shadow" style="background: rgba(100%,100%,100%,0.5);padding: 16px;">
                 <p class="lead" style="text-align: -webkit-left;">
                     <h5 class="border-bottom border-gray pb-2 mb-0">NSC (MOST) Projects</h5>
                     <li>Human-Centered Interactive Interface of Smart TV That Incorporates Audio-Visual Technology</li>
@@ -198,7 +231,7 @@
                 </p>
             </div>
             <br>
-            <div class="bg-white rounded box-shadow" style="padding: 16px;">
+            <div class="rounded box-shadow" style="background: rgba(100%,100%,100%,0.5);padding: 16px;">
                 <p class="lead" style="text-align: -webkit-left;">
                     <h5 class="border-bottom border-gray pb-2 mb-0">Internal Projects</h5>
                     <br>
@@ -211,7 +244,7 @@
         <div class="row">
             <div class="col" style="border-right-style:dotted; border-color: #4f4f4f;">
                 <div style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>實驗室資源</h3></div>
-                <div class="container bg-white rounded box-shadow" style="padding: 16px;">
+                <div class="container rounded box-shadow" style="background: rgba(100%,100%,100%,0.5);padding: 16px;">
                     <li>Lab Homepage (temporarily accessible via IP only)</li>
                     <li>WIRL @ Google Groups</li>
                     <li>WIRL Progress Reporting System (new URL)</li>
@@ -222,7 +255,7 @@
             </div>
             <div class="col">
                 <div id="webresource" style="text-align: -webkit-center; width:100%; margin: 10px 0px 20px 0px;"><h3>網路資源</h3></div>
-                <div class="container bg-white rounded box-shadow" style="padding: 16px;">
+                <div class="container rounded box-shadow" style="background: rgba(100%,100%,100%,0.5);padding: 16px;">
                     <p style="text-align: -webkit-center;">
                         Here are some general Web resources and tools that might be useful.<br>
                         For resources specific to particular domains, please refer to related research topics or internal projects.
@@ -267,7 +300,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+
+    <script>
     function initMap() {
         var uluru = {lat: 25.0440968, lng: 121.5336628};
         var map = new google.maps.Map(document.getElementById('map'), {
